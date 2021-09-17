@@ -1,9 +1,9 @@
-FROM docker:19.03.11
+FROM docker:20.10.8
 
 MAINTAINER fangzhengjin <fangzhengjin@gmail.com>
 
-ARG KUBECTL_VERSION=v1.18.6
-ARG HELM_VERSION=v3.2.1
+ARG KUBECTL_VERSION=v1.20.4
+ARG HELM_VERSION=v3.7.0
 ENV HELM_FILENAME=helm-${HELM_VERSION}-linux-amd64.tar.gz
 
 RUN apk add --update ca-certificates \
